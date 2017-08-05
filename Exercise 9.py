@@ -28,9 +28,11 @@ def number_game():
         if num == number:
             print("That's it! You win!")
             print("It took you {} guesses.".format(count))
-            print("Starting new game...")
-            gen_number()
-            get_guess()
+            play_again = input("Want to play again? Y/n")
+            if play_again.upper() == 'Y':
+                print("Starting new game...")
+                gen_number()
+                get_guess()
         elif num < number:
             print("That's to low. Try again. ")
             get_guess()

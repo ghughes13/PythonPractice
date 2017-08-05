@@ -1,3 +1,5 @@
+# Determines if number is even or odd and if the first number is evenly divisible by the second number given ---- DONE
+
 num = int(input("Give me a number: "))
 
 if num % 4 == 0:

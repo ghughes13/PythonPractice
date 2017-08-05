@@ -14,7 +14,7 @@ def rps():
     elif (player_one == 'P' and player_two == 'R') or (player_one == 'R' and player_two == 'S') or (player_one == 'S' and player_two == 'P'):
         print("{} vs {}. Player one wins! ".format(player_one,player_two))
     again = input("Play again? Y/n ")
-    if again.upper == 'Y':
+    if again.upper() == 'Y':
         rps()
 
 rps()
